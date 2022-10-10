@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practice Page</title>
+<script type="text/javascript" src="./practice.js"></script>
+<link rel="stylesheet" href="./practice.css">
+</head>
+<nav>
+    <nav>
+        <a href="./index.html">Home </a>
+        <a href="./aboutme.html">About Me </a>
+        <a href="mailto:zaferarslaan@gmail.com">Contact Me</a>
+        <a href="https://mke.gov.tr" target="_blank">MKE </a>
+        <a href="./todo.html" target="_blank">To-Do App</a>
+        <a href="./practice.html">Practice</a>
+        <a href="./painter.html">Painter</a>
+        <div class="animation-start-home"></div>
+    </nav>
+</nav>
+<body>
+    <h1 id="h1" class="">Canvas </h1>
+    
+    <canvas id="can1" >
+        
+    </canvas>
+    <canvas id="can2">
+    
+    </canvas>
+    
+    
+    <!-- create 2 button  -->
+    <div>
+        <input type="button" onclick="changeColor()" value="Change Color">
+        <br></br>
+        <div>
+            
+            <input type="button" onclick="doRed()" value="red">
+            <input type="button" onclick="doBlue()" value="Blue">
+            <br></br>
+        </div>
+        <!-- color picker -->
+        <div>
+            <input type="color" id="colorPicker" value="#001A57"  >
+            <input type="button" onclick="doColor()" value="Change Selected Color">
+            <br>   </br>
+        </div>
+        <!-- slider -->
+        <div>
+            <input type="range" id="slider" min="10" max="100" value="10" oninput="doSquare()">
+            Square Slider
+            <br></br>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

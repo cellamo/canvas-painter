@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do App</title>
+<script type="text/javascript" src="./todo.js"></script>
+<link rel="stylesheet" href="./todo.css">
+</head>
+<nav>
+  <a href="./index.html">Home </a>
+  <a href="./aboutme.html">About Me </a>
+  <a href="mailto:zaferarslaan@gmail.com">Contact Me</a>
+  <a href="https://mke.gov.tr" target="_blank">MKE </a>
+  <a href="./todo.html" target="_blank">To-Do App</a>
+  <a href="./practice.html">Practice</a>
+  <a href="./painter.html">Painter</a>
+  <div class="animation-start-home"></div>
+</nav>
+<body id="body">
+    <h1 id="myHeader">TO DO List</h1>
+
+    <!-- zafer STEPs 1 and 2 below here  -->
+        
+    <!-- add an <input> tag with attribute type=”button”. Include attributes id=”addButton” and value=”Add”. -->
+    <input type="button" id="addButton" value="Add" onclick="addTask()"></input>
+    <!-- right after the add button, add an input field so the user can type in text describing the next task. To do this add another <input > tag, this time with type=”text”, id=”input”, and placeholder=”enter task …”.   -->
+    <input type="text" id="input" placeholder="enter task ...">
+    
+    <hr>
+        
+    <ul id="tasks">
+      <li>
+        <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+        <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+        make todo list
+      </li>
+      
+        </ul>
+    <hr>
+    <!-- STEPs 8 and 9 below here  -->
+     <!-- empty div with id=”divabout" -->
+    <div id="divabout">
+      <!-- add a button that says About and have onclick call a function named doAbout().  -->
+      
+    </div>
+    <button onclick="doAbout()">About</button>
+    <button onclick="clearAbout()">Clear</button>
+    
+     <!-- STEP 13 below here  -->
+    
+        
+
+
+    </body>
+    </html>

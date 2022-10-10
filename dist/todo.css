@@ -1,0 +1,103 @@
+
+
+
+/* remove indentation of list items */
+
+ul {
+  padding-left: 0;
+}
+
+
+/* remove traditional bullet from front of list items */
+/* Step 3 below here */
+ #addButton{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+
+#input{
+width: 30%;
+}
+
+#tasks{
+  /* limit the div's width to %50 and align center*/
+  /* center */
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto;
+}
+li {
+    
+    font-size: 20px;
+  list-style-type: none;
+  background-color: #eee;
+  border: 1px solid #c3c3c3;
+  padding: 10px 0px 10px 5px;
+}
+
+
+/* Step 5 below here */
+.done {
+  /* color green */
+  background: rgb(50, 136, 50);
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.remove {
+  /* color red */
+  background: rgb(190, 44, 44);
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+
+/* mark task as finished */
+/* Step 6 below here */
+li.finished {
+/*  a. Set color to white
+    b. Set background-color to gray
+    c. Set text-decoration to line-through */
+    color: white;
+    background-color: gray;
+    text-decoration: line-through;
+}
+
+input[type="text"] {
+  font-size: 18px;
+  width: 94%;
+  padding: 10px;
+}
+
+input[type="button"] {
+  font-size: 1.2em;
+  margin: -6px 4px 0px 0px;
+}
+
+#addButton {
+  padding: 10px;
+}
+
+/* Step 10 below here */
+.yellowbackground {
+  background-color: yellow;
+}
+
+
+/* Step 12 below here */
+#divabout {
+  width: 300px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+
+

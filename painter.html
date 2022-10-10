@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paint Canvas</title>
+<script type="text/javascript" src="./painter.js"></script>
+<link rel="stylesheet" href="./painter.css">
+</head>
+<nav>
+    <a href="./index.html">Home </a>
+    <a href="./aboutme.html">About Me </a>
+    <a href="mailto:zaferarslaan@gmail.com">Contact Me</a>
+    <a href="https://mke.gov.tr" target="_blank">MKE </a>
+    <a href="./todo.html" target="_blank">To-Do App</a>
+    <a href="./practice.html">Practice</a>
+    <a href="./painter.html">Painter</a>
+    <div class="animation-start-home"></div>
+</nav>
+
+<body>
+    <h1>Draw Your Mind</h1>
+    <div>
+        Set Width
+        
+        
+        <input type="text" id="width" value="100" min="100" max="1200" onchange="setWidth()">
+        Set Height
+        <input type="text" id="height" value="100" min="100" max="1200" onchange="setHeight()">
+    </div>
+    <canvas id="canvas1" onmousedown="startPaint()" onmousemove="doPaint(event.offsetX,event.offsetY)" onmouseup="endPaint()"> </canvas>
+
+    <p>
+        Brush Color
+        <input type="color" value="#000" onchange="setColor(this.value)">
+        Brush Size
+        <input type="range" id="sizeInput" min="1" max="50" value="10" oninput="resizeBrush(this.value)">
+        <output id="sizeOutput">10</output>
+    </p>
+
+    <p>
+        <input type="button" id="clear" value="Clear Canvas" onclick="clearCanvas()">
+    </p>
+</body>
+
+</html>
